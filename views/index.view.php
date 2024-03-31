@@ -11,7 +11,7 @@
                         -->
                         <!-- 
                         If the user is logged the logout appears and disapear the others -->
-                        <a href="views/login.view.php" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Logout</a>
+                        <a href="./login.view.php" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Logout</a>
                     </div>
                 </div>
             </div>

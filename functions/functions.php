@@ -1,5 +1,5 @@
 <?php
-
+// function to debug code
 function dd($value)
 {
     echo "<pre>";
@@ -9,7 +9,7 @@ function dd($value)
     die();
 }
 
-function urlIs($value)
+function urlIs($request,$value)
 {
-    return $_SERVER['REQUEST_URI'] === $value;
+    return $_SERVER[$request] === $value;
 }
