@@ -1,5 +1,6 @@
 <?php
 
+$heading = "Register Page";
 
-require('views/register.view.php')
+require('views/register.view.php');
 ?>

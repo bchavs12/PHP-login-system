@@ -9,16 +9,15 @@
                             Atual: "bg-gray-900 text-white", 
                             Padrão: "text-gray-300 hover:bg-gray-700 hover:text-white" 
                         -->
-                        <a href="./login.view.php" class=" bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Login</a>
-
-                        <a href="./register.view.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Register</a>
-                        
+                        <a href="./login.view.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                        <a href="./register.view.php" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Cadastro</a>                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </nav>
+
 <header class="bg-white shadow">
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-bold tracking-tight text-gray-900 text-center">Cadastro</h1>
@@ -27,7 +26,7 @@
 
 <main class="max-h-screen">
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <form action="../controllers/register.php" method="post" class="flex flex-col w-full justify-center items-center gap-4">
+        <form action="../login.php" method="post" name="cadastro" class="flex flex-col w-full justify-center items-center gap-4">
             <div class="flex flex-col w-[300px]">
                 <label for="name">Name: </label>
                 <input type="text" name="name" placeholder="User name">

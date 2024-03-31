@@ -1,5 +1,4 @@
 <?php require('head.view.php') ?>
-
 <nav class="bg-gray-800">
     <div class=" px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
@@ -12,7 +11,7 @@
                         -->
                         <!-- 
                         If the user is logged the logout appears and disapear the others -->
-                        <a href="/views/login.view.php" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Logout</a>
+                        <a href="views/login.view.php" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Logout</a>
                     </div>
                 </div>
             </div>
@@ -28,8 +27,14 @@
 
 <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-        <h1>Lista de usuarios já registrados</h1>
-        
+        <h1 class="text-2xl font-bold">Lista de usuarios registrados: </h1>
+        <ul>
+            <?php foreach( $usersData as $key => $value ) : ?>
+                <li class="ml-4 font-medium border">
+                    <?= $key . ' - ' . 'Name: ' . $value['user_name'] . '<br>' . ' Email: ' . ($value['user_email']) . '<br>' ?>
+                </li>
+            <?php endforeach; ?>
+        </ul>
     </div>
 </main>
 </div>
