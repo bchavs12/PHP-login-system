@@ -5,13 +5,7 @@
             <div class="flex items-center">
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <!-- 
-                            Atual: "bg-gray-900 text-white", 
-                            Padrão: "text-gray-300 hover:bg-gray-700 hover:text-white" 
-                        -->
-                        <!-- 
-                        If the user is logged the logout appears and disapear the others -->
-                        <a href="./login.view.php" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Logout</a>
+                        <a href="views/login.view.php" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Logout</a>
                     </div>
                 </div>
             </div>
@@ -29,11 +23,9 @@
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
         <h1 class="text-2xl font-bold">Lista de usuarios registrados: </h1>
         <ul>
-            <?php foreach( $usersData as $key => $value ) : ?>
-                <li class="ml-4 font-medium border">
-                    <?= $key . ' - ' . 'Name: ' . $value['user_name'] . '<br>' . ' Email: ' . ($value['user_email']) . '<br>' ?>
-                </li>
-            <?php endforeach; ?>
+            <li>
+                <!-- <?= $users ?> -->
+            </li>
         </ul>
     </div>
 </main>
